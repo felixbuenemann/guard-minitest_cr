@@ -1,1 +1,1 @@
-# Moved to [GitHub releases](https://github.com/guard/guard-minitest/releases) page.
+# Moved to [GitHub releases](https://github.com/felixbuenemann/guard-minitest_cr/releases) page.

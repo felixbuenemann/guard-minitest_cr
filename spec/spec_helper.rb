@@ -1,12 +1,5 @@
 require 'rspec'
 
-if ENV['CI']
-  require 'coveralls'
-  Coveralls.wear! do
-    add_filter 'spec'
-  end
-end
-
 require 'guard/compat/test/helper'
 
 RSpec.configure do |config|

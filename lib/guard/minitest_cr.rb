@@ -1,10 +1,9 @@
 require 'guard/compat/plugin'
 
 module Guard
-  class Minitest < Plugin
-    require 'guard/minitest/runner'
-    require 'guard/minitest/utils'
-    require 'guard/minitest/version'
+  class MinitestCr < Plugin
+    require 'guard/minitest_cr/runner'
+    require 'guard/minitest_cr/version'
 
     attr_accessor :runner
 
@@ -17,7 +16,7 @@ module Guard
     end
 
     def start
-      Compat::UI.info "Guard::Minitest #{MinitestVersion::VERSION} is running, with Minitest::Unit #{Utils.minitest_version}!"
+      Compat::UI.info "Guard::MinitestCr #{MinitestCrVersion::VERSION} is running!"
       run_all if @options[:all_on_start]
     end
 

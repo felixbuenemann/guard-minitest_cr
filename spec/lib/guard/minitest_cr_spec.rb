@@ -1,9 +1,9 @@
-require 'guard/minitest'
+require 'guard/minitest_cr'
 
-RSpec.describe Guard::Minitest do
-  subject { Guard::Minitest }
+RSpec.describe Guard::MinitestCr do
+  subject { Guard::MinitestCr }
 
-  let(:runner) { Guard::Minitest::Runner }
+  let(:runner) { Guard::MinitestCr::Runner }
   let(:guard) { subject.new }
 
   describe 'initialization' do

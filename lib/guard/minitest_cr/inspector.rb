@@ -1,13 +1,14 @@
-require 'guard/minitest'
+require 'guard/minitest_cr'
 
 module Guard
-  class Minitest < Plugin
+  class MinitestCr < Plugin
     class Inspector
-      attr_reader :test_folders, :test_file_patterns
+      attr_reader :test_folders, :test_file_patterns, :test_helpers
 
-      def initialize(test_folders, test_file_patterns)
+      def initialize(test_folders, test_file_patterns, test_helpers)
         @test_folders = test_folders.uniq.compact
         @test_file_patterns = test_file_patterns.uniq.compact
+        @test_helpers = test_helpers.uniq.compact
       end
 
       def clean_all
@@ -38,8 +39,9 @@ module Guard
       def _test_files_for_paths(paths = test_folders)
         paths = _join_for_glob(Array(paths))
         files = _join_for_glob(test_file_patterns)
+        helpers = _join_for_glob(test_helpers)
 
-        Dir["#{paths}/**/#{files}"]
+        Dir["#{paths}/**/#{files}"] - Dir["#{paths}/**/#{helpers}"]
       end
 
       def _test_file?(path)

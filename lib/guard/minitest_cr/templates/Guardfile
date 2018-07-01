@@ -1,0 +1,16 @@
+guard :minitest_cr do
+  # with Minitest::Test ("_test" suffix)
+  watch(%r{^test/(.+)_test\.cr$})
+  watch(%r{^src/(.+)\.cr$})         { |m| "test/#{m[1]}_test.cr" }
+  watch(%r{^test/test_helper\.cr$}) { Dir.glob("test/**/*_test.cr") }
+
+  # with Minitest::Test ("test_" prefix)
+  # watch(%r{^test/(.*)\/?test_(.*)\.cr$})
+  # watch(%r{^src/(.*/)?([^/]+)\.cr$})     { |m| "test/#{m[1]}test_#{m[2]}.cr" }
+  # watch(%r{^test/test_helper\.cr$})      { Dir.glob("test/**/test_*.cr") }
+
+  # with Minitest::Spec ("_spec" suffix)
+  # watch(%r{^spec/(.+)_spec\.cr$})
+  # watch(%r{^src/(.+)\.cr$})         { |m| "spec/#{m[1]}_spec.cr" }
+  # watch(%r{^spec/spec_helper\.cr$}) { Dir.glob("spec/**/*_spec.cr") }
+end

@@ -10,11 +10,6 @@ group :development do
   gem 'guard-rspec', require: false
   gem 'ruby_gntp', require: false
 
-  # Used for release
-  gem 'gems', require: false
-  gem 'netrc', require: false
-  gem 'octokit', require: false
-
   gem 'guard-rubocop', require: false
 end
 
