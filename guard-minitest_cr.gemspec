@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.authors     = ['Felix Bünemann', 'Yann Lugrin', 'Rémy Coutable']
   s.email       = ['felix.buenemann@gmail.com']
-  s.homepage    = 'https://github.com/felixbuenemann/guard-minitest-cr'
+  s.homepage    = 'https://github.com/felixbuenemann/guard-minitest_cr'
   s.summary     = 'Guard plugin for the Crystal Minitest.cr framework'
   s.description = 'Guard::Minitest automatically run your tests with Minitest.cr framework (much like autotest)'
 
