@@ -6,3 +6,4 @@ rvm:
 
 # use Travis AUFS containers
 sudo: false
+cache: bundler
