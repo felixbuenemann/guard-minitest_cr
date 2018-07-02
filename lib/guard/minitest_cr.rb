@@ -2,8 +2,8 @@ require 'guard/compat/plugin'
 
 module Guard
   class MinitestCr < Plugin
-    require 'guard/minitest_cr/runner'
-    require 'guard/minitest_cr/version'
+    require 'guard/minitestcr/runner'
+    require 'guard/minitestcr/version'
 
     attr_accessor :runner
 

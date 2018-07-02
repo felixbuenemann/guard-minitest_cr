@@ -1,4 +1,4 @@
-require 'guard/minitest_cr/inspector'
+require 'guard/minitestcr/inspector'
 
 RSpec.describe Guard::MinitestCr::Inspector do
   let(:inspector) { Guard::MinitestCr::Inspector.new(%w(test spec), %w(*_test.rb test_*.rb *_spec.rb), %w(test_helper.rb spec_helper.rb)) }

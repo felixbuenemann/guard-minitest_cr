@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 $:.push File.expand_path('../lib', __FILE__)
-require 'guard/minitest_cr/version'
+require 'guard/minitestcr/version'
 
 Gem::Specification.new do |s|
   s.name        = 'guard-minitest_cr'
