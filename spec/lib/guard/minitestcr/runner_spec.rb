@@ -1,4 +1,4 @@
-require 'guard/minitest_cr/runner'
+require 'guard/minitestcr/runner'
 
 RSpec.describe Guard::MinitestCr::Runner do
   let(:options) { {} }
@@ -277,10 +277,10 @@ RSpec.describe Guard::MinitestCr::Runner do
 
     it 'loads correctly as minitest plugin' do
       code = <<-EOS
-        require 'guard/minitest_cr/runner'
+        require 'guard/minitestcr/runner'
       EOS
 
-      system(*%w(bundle exec ruby -e) + [code])
+      expect(system(*%w(bundle exec ruby -e) + [code])).to be true
     end
   end
 end

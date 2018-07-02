@@ -1,4 +1,4 @@
-require 'guard/minitest_cr/inspector'
+require 'guard/minitestcr/inspector'
 require 'English'
 
 module Guard

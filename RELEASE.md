@@ -28,7 +28,7 @@ Note that there's no need to mention the author of each change since they can be
     - If there's new features, increment minor digit and reset patch digit, e.g. `vX.Y+1.0`.
     - If there's new features that break retro-compatibility, increment major digit and reset minor & patch digits, e.g. `vX+1.0.0`.
     - See [SemVer](http://semver.org) when in doubts.
-3. Then, update the version of the gem accordingly too, in `lib/guard/minitest_cr/version.rb`.
+3. Then, update the version of the gem accordingly too, in `lib/guard/minitestcr/version.rb`.
 4. Commit `Bump to X.Y.Z` and push to GitHub.
 5. Run the magic rake task: `bundle exec rake release`. This will push the gem to Rubygems.
 6. Update and publish the GitHub release notes!
