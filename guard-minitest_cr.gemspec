@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.authors     = ['Felix Bünemann', 'Yann Lugrin', 'Rémy Coutable']
   s.email       = ['felix.buenemann@gmail.com']
   s.homepage    = 'https://github.com/felixbuenemann/guard-minitest_cr'
-  s.summary     = 'Guard plugin for the Crystal Minitest.cr framework'
-  s.description = 'Guard::Minitest automatically run your tests with Minitest.cr framework (much like autotest)'
+  s.summary     = 'Guard plugin for the minitest.cr test framework'
+  s.description = 'Guard::MinitestCr automatically runs your Minitest for Crystal (minitest.cr) tests or specs.'
 
   s.required_ruby_version = '>= 1.9.2'
 
